@@ -9,7 +9,10 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>CIAO
+    <body>
+        <h1>NENNO</h1>
+        <h2>NENNO</h2>
+        <p>NENNO</p>
         <?php
         // put your code here
         ?>
