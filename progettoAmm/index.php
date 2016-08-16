@@ -6,8 +6,9 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <title>Il Ghirigoro</title>
         <meta charset="UTF-8">
-        <title></title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
     </head>
     <body>
         <h1>NENNO</h1>
@@ -15,6 +16,10 @@ and open the template in the editor.
         <p>NENNO</p>
         <?php
         // put your code here
+        
+        $a = "Hello ";
+        $b = "Federico";
+        echo "$a$b";
         ?>
     </body>
 </html>
