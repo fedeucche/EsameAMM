@@ -12,10 +12,10 @@ body {
     background-color: #fbbcbc;
 }
 
-page {
+/*page {
     width: 98%;
     margin: 1%;
-}
+}*/
 
 /*#menu {
     border-color: #9e1616;
@@ -46,7 +46,7 @@ page {
     width: 15%;
 }*/
 
-div#logo h1 {
+div#header h1 {
     background-image: url('../media/logo.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -59,18 +59,17 @@ div#logo h1 {
 
 a:link, a:visited
 {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 a:hover
 {
     text-decoration:underline;
-    color: whitesmoke;
+    color: indigo;
 }
 
-div#content {
-    float: left;
+.content{
     display: inline-block;
     top: 35px;
     height: 100%;   
@@ -126,6 +125,13 @@ tr:nth-child(even) {
 div#booksTab{
     border-color: #800000;
     border-width: 2px;
+    display: table;
+}
+
+div#orariTab{
+    border-color: #800000;
+    border-width: 2px;
+    border-style: solid;
     display: table;
 }
 
