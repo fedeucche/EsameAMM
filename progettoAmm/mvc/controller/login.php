@@ -38,7 +38,7 @@ if (isset($_REQUEST["login"]) &&
 
 if(isset($_REQUEST["logout"])){
     logout();
-    header("Location:master.php?page=Descrizione");
+    header("Location:master.php?page=Homepage");
 }
 
 if(isset($_REQUEST["register"])){

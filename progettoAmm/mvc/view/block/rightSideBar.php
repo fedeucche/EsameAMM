@@ -1,26 +1,28 @@
 
 <div id='sidebarRight' class='sidebar'>
-    <a href='master.php?page=Login' class="button">Login</a>
-    <a href='master.php?page=Registration' class="button">Register</a>
-    <form method="post" class='formLogout'>
-        <input type="submit" name='logout' value="Logout" class="buttonFixed">
-    </form>
-
-
+    
 <?php
     if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
+        //User loggato
 ?>
 <div id="loggedLabel">
-    <p>Logged in as 
+    <p>Benvenuto 
 <?php
-        echo $_SESSION["username"]
-                .'</p>'
-                .'</div>';
-    } else {
+    echo $_SESSION["username"];
 ?>
-<div id="loggedLabel">
-    <p>You're not logged in</p>
+    </p>
 </div>
+<form method="post" class='formLogout'>
+    <input type="submit" name='logout' value="Logout" class="buttonFixed">
+</form>
+    
+<?php
+    } else {
+        //User non loggato
+?>        
+<a href='master.php?page=Login' class="button">Login</a>
+<a href='master.php?page=Registration' class="button">Register</a>
+
 <?php
     }
 ?>
