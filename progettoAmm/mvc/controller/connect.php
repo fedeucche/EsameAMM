@@ -1,3 +1,3 @@
 <?php
-$con = mysql_connect('localhost','root','','demo');
+$con = mysql_connect('localhost', 'root', 'davide', 'amm15_ucchesuFederico');
 ?>

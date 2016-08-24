@@ -1,4 +1,5 @@
-<form method="POST" action="../index.php">
+
+<form class="content" method="POST" action="../index.php">
     <label for="title">Titolo</label>
     <input type="text" id="title" name="title">
     <br/>
