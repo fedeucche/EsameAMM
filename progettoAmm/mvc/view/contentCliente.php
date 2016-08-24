@@ -1,48 +1,57 @@
+
 <div class="content" id="booksTab">
     <table>
         <tbody>
             <tr>
                 <th>Titolo</th>
-                <!--<th>Anteprima</th>-->
-                <th>N. pezzi rimasti</th>
+                
                 <th>Prezzo</th>
                 <th>Carrello</th>
             </tr>
+            
+<?php
+
+    $connection = mysqli_connect(Settings::$db_host,
+                                Settings::$db_user,
+                                Settings::$db_password,
+                                Settings::$db_name)
+                  or die("Could not connect");
+    // verifico la presenza di errori
+    if (mysqli_connect_errno() != 0) {
+        // gestione errore
+        $idErrore = $mysqli->connect_errno;
+        $msg = $mysqli->connect_error;
+        error_log("Errore nella connessione al server $idErrore : $msg", 0);
+        echo "Errore nella connessione $msg<br>";
+    } else {
+        // Connessione andata a buon fine
+        // Carico i libri del db nella tabella
+        refreshBooks($connection);
+    }
+    mysqli_close($connection);
+
+    function refreshBooks($dbCon){
+        $result = mysqli_query($dbCon, "SELECT * FROM books");
+        while($row = mysqli_fetch_array($result)){
+        echo "<tr>" .
+             "<td>" . $row['title'] . "</td>".
+             "<td>" . $row['price'] ." G". "</td>".
+             "<td>" . "<img src='../../media/cart_add.png' class='cartIcon'>". "</td>".
+             "</tr>";
+        }
+    }
+?>  
+            
+<!--            
             <tr>
                 <td>Difesa contro le arti oscure</td>
-                <!--<td><img class="previewImage" title="Preview" src="../../media/difesa.jpg" alt="Preview" width="60" height="60"></td>-->
-                <td>10</td>
-                <td>3 gal</td>
-                <td><a href="../Web Pages/cliente.html">Aggiungi</a></td>
+                
+                <td>20 galeoni</td>
+                <td><a href="">Aggiungi</a></td>
             </tr>
-            <tr>
-                <td>Botanica 1</td>
-                <!--<td><img class="previewImage" title="Preview" src="../../media/difesa.jpg" alt="Preview" width="60" height="60"></td>-->
-                <td>10</td>
-                <td>3 gal</td>
-                <td><a href="../Web Pages/cliente.html">Aggiungi</a></td>
-            </tr>
-            <tr>
-                <td>Licantropi</td>
-                <!--<td><img class="previewImage" title="Preview" src="../../media/difesa.jpg" alt="Preview" width="60" height="60"></td>-->
-                <td>10</td>
-                <td>3 gal</td>
-                <td><a href="../Web Pages/cliente.html">Aggiungi</a></td>
-            </tr>
-            <tr>
-                <td>Mandragologia</td>
-                <!--<td><img class="previewImage" title="Preview" src="../../media/difesa.jpg" alt="Preview" width="60" height="60"></td>-->
-                <td>10</td>
-                <td>3 gal</td>
-                <td><a href="../Web Pages/cliente.html">Aggiungi</a></td>
-            </tr>
-            <tr>
-                <td>Pozioni 3</td>
-                <!--<td><img class="previewImage" title="Preview" src="../../media/difesa.jpg" alt="Preview" width="60" height="60"></td>-->
-                <td>10</td>
-                <td>3 gal</td>
-                <td><a href="../Web Pages/cliente.html">Aggiungi</a></td>
-            </tr>
+-->
+            
+            
         </tbody>
     </table>
 </div>

@@ -8,8 +8,7 @@
 
 
 <?php
-    session_start();
-    if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
+    if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
 ?>
 <div id="loggedLabel">
     <p>Logged in as 

@@ -1,61 +1,38 @@
-<div class="content" id="contentDescrizione">
-    <h2>Chi siamo</h2>
-    <p>La libreria Il Ghririgoro si trova a Diagon Alley,
-        ci potete trovare tutti i libri per i corsi di Hogwarts.</p>
+<div class="content">
+<h2>Titolo progetto: Il Ghirigoro di Flourish & Blotts</h2>
+    <p>
+        Sono Federico Ucchesu, matricola 70/87/44557, questo è il mio progetto per l'esame
+        Amministrazione di Sistema.
+    </p>
 
-
-    <h2>Categorie di Libri</h2>
-    <div id='menu'>
+    <h2> Descrizione dell'applicazione </h2>
+    <p> Questo è un sito goliardico e irreale.<br>
+        È il sito ufficiale della libreria 'Il Ghirigoro' della saga di Harry Potter.<br>
+        L'applicazione supporta la registrazione degli utenti.<br>
+        Gli utenti normali (clienti) possono aggiungere libri al carrello per l'acquisto.
+        Il proprietario (admin) può aggiungere libri.
+    </p>
+    <h3>Per il progetto ho soddisfatto i seguenti requisiti: </h3>
+    <ul>
+        <li>Utilizzo di HTML e CSS</li>
+        <li>Utilizzo di PHP e MySQL</li>
+        <li>Utilizzo del pattern MVC</li>
+        <li>Due ruoli (cliente e proprietario)</li>
+        <li>Transazione per l'aggiunta dei libri al carrello (***indicare la classe dove è implementata***)</li>
+        <li>***Almeno una funzionalità ajax (indicare in quale script si trovi)***</li>
+    </ul>
+    <p>Si pu&ograve; accedere alla applicazione con le seguenti credenziali</p>
+    <ul>
+        <li>Ruolo proprietario:</li>
         <ul>
-            <li><a href="#trasfigurazione">Trasfigurazione</a></li>
-            <li><a href="#incantesimi">Incantesimi</a></li>
-            <li><a href="#pozioni">Pozioni</a></li>
-            <li><a href="#difesa">Difesa contro le Arti Oscure</a></li>
-            <li><a href="#erbologia">Erbologia</a></li>
+            <li>Username: admin</li>
+            <li>Password: flourishblotts2016</li>
         </ul>
-    </div>
-
-    <h3 id="trasfigurazione">Trasfigurazione</h3>     
-        <p> La materia insegna la trasformazione magica di un elemento in un altro.
-            Si possono trasfigurare sia oggetti inanimati che animati (animali o persone)
-            o anche soltanto parti di essi. In questo caso le combinazioni diventano molte:
-            si può trasfigurare un animale (o parte di esso) in un oggetto, un oggetto 
-            (o parte di esso) in un animale oppure una persona (o parte di essa) in animale o oggetto.
-            La Trasfigurazione insegna anche l'evocazione, ossia il far comparire oggetti o animali
-            dal nulla, e l'evanescenza, ossia il far scomparire oggetti nel nulla. Albus Silente ha
-            insegnato questa materia prima di diventare preside della scuola. Questa materia 
-            è considerata una tra le più difficili a Hogwarts.</p>
-
-    <h3 id="incantesimi">Incantesimi</h3>
-        <p>Si occupa di insegnare agli studenti gli incantesimi di tutti i tipi,
-            che non riguardino ovviamente Trasfigurazione o Difesa contro le Arti Oscure.
-            Ad esempio vengono insegnati vari incantesimi come Wingardium Leviosa, l'incantesimo
-            di levitazione (uno dei più elementari e il primo che viene insegnato, dopo mesi di
-            esercitazione ad "agitare e colpire", il movimento da fare con la bacchetta) che fa
-            volare oggetti, Alohomora, l'incantesimo di apertura di porte o serrature meccaniche,
-            oppure Accio, conosciuto anche come l'incantesimo di appello, che consente di richiamare
-            un oggetto a sé, e tantissimi altri.</p>
-
-    <h3 id="pozioni">Pozioni</h3>
-        <p>La materia ha lo scopo di insegnare agli studenti come preparare
-            e mescere le pozioni, dalle più semplici alle più complicate e potenti.
-            L'effetto di una pozione è dovuto alla presenza di ingredienti magici,
-            alcuni dei quali vanno recuperati in particolari condizioni, anche da
-            precise dosi e tempi di cottura.
-        </p>
-
-    <h3 id="difesa">Difesa contro le Arti Oscure</h3>
-        <p>La materia avrebbe lo scopo di preparare gli alunni ad affrontare Creature e 
-            Arti Oscure. Gli alunni imparano a Disarmare, Schiantare, bloccare malefici,
-            evocare controincantesimi e controfatture. Nel programma è previsto lo studio
-            delle Creature Oscure (Mollicci, Berretti Rossi, Marciotti, Kappa, Lupi Mannari...)
-            e l'apprendimento di incantesimi specifici per affrontarle. A livello avanzato si
-            studiano le Maledizioni (tra le quali non mancano naturalmente quelle Senza Perdono)
-            e gli Incantesimi non-verbali (che prevedono che la formula venga solo pensata,
-            senza pronunciarla, il che può mettere in difficoltà l'avversario,
-            che non può capire quale magia si abbia intenzione di fare). </p>
-
-    <h3 id="erbologia">Erbologia</h3>
-        <p>In questa materia si studiano le piante magiche,
-            le loro caratteristiche e i modi per occuparsene e ricavarne prodotti utili.</p>
+        <li>Ruolo cliente:</li>
+        <ul>
+            <li>Username: clientex</li>
+            <li>Password: abc</li>
+        </ul>
+    </ul>
+    <p>Ovviamente è anche possibile registrarsi come cliente.</p>
 </div>

@@ -12,6 +12,10 @@ body {
     background-color: #fbbcbc;
 }
 
+p{
+    text-align: justify;
+}
+
 div#header h1 {
     background-image: url('../media/logo.png');
     background-size: auto 100%;
@@ -62,6 +66,9 @@ div#header h1 {
 }
 
 .button{
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+    vertical-align: middle;
     background-color: #800000 ;
     border: none;
     text-align: center;
@@ -109,6 +116,12 @@ tr:nth-child(odd) {
 }
 tr:nth-child(even) {
     background-color: #f2f2f2
+}
+
+th, td{
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
 }
 
 div#booksTab{
