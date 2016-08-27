@@ -1,4 +1,5 @@
 <div class="content" id="contentDescrizione">
+    
     <h1>Registrati per acquistare i nostri libri</h1>
     
     <h2>Chi siamo</h2>

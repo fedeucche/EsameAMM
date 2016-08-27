@@ -7,6 +7,6 @@
         <br/>
         <input type="password" id="password" name="password" placeholder="Password">
         <br/> 
-        <input type="submit" name="login" value="Login">
+        <input type="submit" name="login" value="Accedi">
     </form>
 </div>

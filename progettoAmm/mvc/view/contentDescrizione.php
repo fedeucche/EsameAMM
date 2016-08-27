@@ -18,7 +18,7 @@
         <li>Utilizzo di PHP e MySQL</li>
         <li>Utilizzo del pattern MVC</li>
         <li>Due ruoli (cliente e proprietario)</li>
-        <li>Transazione per l'aggiunta dei libri al carrello (***indicare la classe dove è implementata***)</li>
+        <li>Transazione per la conferma di acquisto dei libri nel carrello(Classe dbTransaction.php, funzione checkoutCart)</li>
         <li>***Almeno una funzionalità ajax (indicare in quale script si trovi)***</li>
     </ul>
     <p>Si pu&ograve; accedere alla applicazione con le seguenti credenziali</p>
@@ -30,8 +30,8 @@
         </ul>
         <li>Ruolo cliente:</li>
         <ul>
-            <li>Username: clientex</li>
-            <li>Password: abc</li>
+            <li>Username: cliente</li>
+            <li>Password: cliente</li>
         </ul>
     </ul>
     <p>Ovviamente è anche possibile registrarsi come cliente.</p>

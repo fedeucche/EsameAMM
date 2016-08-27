@@ -11,6 +11,7 @@ if (isset($_SESSION["role"])) {
     switch ($role) {
         case 'customer':
             echo "<a href='master.php?page=Cliente' class='button'>Cerca<br>un libro</a>";
+            echo "<a href='master.php?page=Cart' class='button'>Carrello</a>";
             break;
         
         case 'owner':

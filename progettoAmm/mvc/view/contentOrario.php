@@ -1,4 +1,4 @@
-<div class="content" id="contentOrari">
+<div class="content">
     <table id="orariTab">
         <tbody>
             <tr class="tabTitles">

@@ -13,15 +13,15 @@
     </p>
 </div>
 <form method="post" class='formLogout'>
-    <input type="submit" name='logout' value="Logout" class="buttonFixed">
+    <input type="submit" name='logout' value="Logout" class='buttonFixed'>
 </form>
     
 <?php
     } else {
         //User non loggato
 ?>        
-<a href='master.php?page=Login' class="button">Login</a>
-<a href='master.php?page=Registration' class="button">Register</a>
+<a href='master.php?page=Login' class="button">Accedi</a>
+<a href='master.php?page=Registration' class="button">Registrati</a>
 
 <?php
     }

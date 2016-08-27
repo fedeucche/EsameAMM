@@ -8,27 +8,14 @@ if (!session_id()) {
 
 //Gestione del Login
 //Ricevo una REQUEST(POST) dal form
-if (isset($_REQUEST["login"]) &&
-        isset($_REQUEST["username"]) &&
-        isset($_REQUEST["password"])) {
+if(isset($_REQUEST["login"]) && isset($_REQUEST["username"]) && isset($_REQUEST["password"])) {
+    
     $username = $_REQUEST["username"];
     $password = $_REQUEST["password"];    
     
-//Provo a connettermi al db
-    
-    $connection = mysqli_connect(Settings::$db_host,
-                                Settings::$db_user,
-                                Settings::$db_password,
-                                Settings::$db_name)
-                  or die("Could not connect");
-    // verifico la presenza di errori
-    if (mysqli_connect_errno() != 0) {
-        // gestione errore
-        $idErrore = $mysqli->connect_errno;
-        $msg = $mysqli->connect_error;
-        error_log("Errore nella connessione al server $idErrore : $msg", 0);
-        echo "Errore nella connessione $msg<br>";
-    } else {
+    //Provo a connettermi al db
+    $connection = dbConnect();
+    if ($connection){
         // Connessione andata a buon fine
         //LOGIN
         login($username, $password, $connection);
@@ -45,27 +32,15 @@ if(isset($_REQUEST["register"])){
     $username = $_REQUEST["username"];
     $password = $_REQUEST["password"];    
     //Provo a connettermi al db
-    $connection = mysqli_connect(Settings::$db_host,
-                                Settings::$db_user,
-                                Settings::$db_password,
-                                Settings::$db_name)
-                  or die("Could not connect");
-// verifico la presenza di errori
-    if (mysqli_connect_errno() != 0) {
-        // gestione errore
-        $idErrore = $mysqli->connect_errno;
-        $msg = $mysqli->connect_error;
-        error_log("Errore nella connessione al server $idErrore : $msg", 0);
-        echo "Errore nella connessione $msg<br>";
-    } else {
+    $connection = dbConnect();
+    if ($connection){
         // Connessione andata a buon fine
-        // 1 Check username
+        // Check username
         if(checkUsername($username, $connection)){
             //Registra nuovo utente
             registerNewUser($username, $password, $connection);
             login($username, $password, $connection);
-        }
-        else {
+        } else {
             echo 'Username non disponibile.<br>'; 
         }
     }

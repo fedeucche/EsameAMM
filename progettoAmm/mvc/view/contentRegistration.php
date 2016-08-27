@@ -8,6 +8,6 @@
         <br/>
         <input type="password" id="password" name="password" placeholder="Password">
         <br/>
-        <input type="submit" name="register" value="Login">
+        <input type="submit" name="register" value="Registrati">
     </form>
 </div>
