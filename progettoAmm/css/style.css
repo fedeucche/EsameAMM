@@ -16,10 +16,6 @@ body {
 p{
     text-align: justify;
 }
-/*
-div{
-    overflow-x: hidden;
-}*/
 
 #header h1 {
     background-image: url('../media/logo.png');
@@ -48,21 +44,21 @@ div{
 
 .sidebar{
     background-color: gainsboro;
-    width: 10%;
-    /*min-width: 100px;*/
-    height: 1000px;
+/*    width: 10%;
+    min-width: 100px;
+    height: 1000px;*/
     padding-top: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#sidebarRight {
+/*#sidebarRight {
     float: right;
 }
 
 #sidebarLeft {
     float: left;
-}
+}*/
 
 .button{
     vertical-align: middle;
@@ -149,11 +145,79 @@ th, td{
     margin: auto;
 }
 
-previewImage {
-    display: block;
-    margin: auto;
-}
-
 #loggedLabel{
     display: inline-block;
+}
+
+/* gestione dei dispositivi */
+
+@media only screen and (min-width: 1024px) {
+    
+    #header{
+        height: 100px;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 900px;
+        border-bottom: 10px solid #9e1616;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+    }
+
+    #wrapper {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom:25px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+
+    #sidebarLeft {
+        float: left;
+        width: 20%;
+        padding-left: 10px;
+
+    }
+
+    #sidebarRight {
+        float: right;
+        width: 20%;
+        padding-right: 10px;
+    }
+
+    .content {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+    
+    #sidebarLeft {
+        float: left;
+        width: 200px;
+        padding-left: 5px;
+        padding-right: 10px;
+
+    }
+
+    #sidebarRight {
+        float: left;
+        clear:both;
+        width: 200px;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    
+    .content {
+        margin-left: 200px;
+        margin-right: 5px;
+        padding-bottom: 10px;
+    }
+
 }

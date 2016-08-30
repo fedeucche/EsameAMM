@@ -26,7 +26,7 @@
         echo "<tr>" .
              "<td>" . $book->title . "</td>".
              "<td>" . $book->price ." G". "</td>".
-             "<td>" . "<a href='master.php?page=Cart&id=". $book->id ."'>"
+             "<td>" . "<a href='master.php?page=Carrello&id=". $book->id ."'>"
                 . "<img src='../../media/cart_add.png'></a>". "</td>".
              "</tr>";
         }

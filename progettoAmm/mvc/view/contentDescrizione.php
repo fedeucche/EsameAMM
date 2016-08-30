@@ -2,7 +2,7 @@
 <h2>Titolo progetto: Il Ghirigoro di Flourish & Blotts</h2>
     <p>
         Sono Federico Ucchesu, matricola 70/87/44557, questo è il mio progetto per l'esame
-        Amministrazione di Sistema.
+        Amministrazione di Sistema, nella la modalità d'esame 2014/2015.
     </p>
 
     <h2> Descrizione dell'applicazione </h2>
@@ -12,13 +12,13 @@
         Gli utenti normali (clienti) possono aggiungere libri al carrello per l'acquisto.
         Il proprietario (admin) può aggiungere libri.
     </p>
-    <h3>Per il progetto ho soddisfatto i seguenti requisiti: </h3>
+    <h2> Per il progetto ho soddisfatto i seguenti requisiti: </h2>
     <ul>
         <li>Utilizzo di HTML e CSS</li>
         <li>Utilizzo di PHP e MySQL</li>
         <li>Utilizzo del pattern MVC</li>
         <li>Due ruoli (cliente e proprietario)</li>
-        <li>Transazione per la conferma di acquisto dei libri nel carrello(Classe dbTransaction.php, funzione checkoutCart)</li>
+        <li>Transazione per la conferma di acquisto dei libri nel carrello (Classe dbTransaction.php, funzione checkoutCart)</li>
         <li>***Almeno una funzionalità ajax (indicare in quale script si trovi)***</li>
     </ul>
     <p>Si pu&ograve; accedere alla applicazione con le seguenti credenziali</p>

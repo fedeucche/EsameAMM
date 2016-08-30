@@ -23,14 +23,15 @@ function addBook($dbCon,$title,$price){
 }
 
 ?>
-<form class="content" method="post">
+<form class="content centeredContent" method="post">
     <h2>Aggiungi un nuovo libro al negozio online</h2>
+    <br>
     <table>
         <tr>
-            <th>
+            <th class="titleCol">
                 <label for="title">Titolo</label>
             </th>
-            <th>
+            <th class="priceCol">
                 <label for="price">Prezzo</label>
             </th>
         </tr>

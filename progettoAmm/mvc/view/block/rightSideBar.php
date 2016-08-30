@@ -12,9 +12,9 @@
 ?>
     </p>
 </div>
-<form method="post" class='formLogout'>
-    <input type="submit" name='logout' value="Logout" class='buttonFixed'>
-</form>
+    
+    <a onclick='return confirm("Confermi?")' href='master.php?logout' class="button">Logout</a>
+    
     
 <?php
     } else {

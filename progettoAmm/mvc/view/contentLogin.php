@@ -1,6 +1,6 @@
 
-<div class="content" id="formLogin">
-    <h1>Login</h1>
+<div class="content centeredContent" id="formLogin">
+    <h2>Login</h2>
     <form method="post">
         <br/>
         <input type="text" id="username" name="username" placeholder="Username">

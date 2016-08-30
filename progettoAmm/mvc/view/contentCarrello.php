@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content centeredContent">
 
 <?php
 
@@ -36,6 +36,8 @@ else{
 }
 
 function showCart(){
+    echo '<h2>Il tuo carrello</h2>';
+    
     $cart = unserialize(serialize($_SESSION['cart']));
     //Mostro tutto il carrello
     echo '
@@ -45,7 +47,7 @@ function showCart(){
     foreach ($cart as $b) {
         echo '<tr><td>'. $b->title .'</td><td>'. $b->price .'</td></tr>';
     }
-    echo '</tbody></table>';
+    echo '</tbody></table><br>';
 }
 
 ?>
