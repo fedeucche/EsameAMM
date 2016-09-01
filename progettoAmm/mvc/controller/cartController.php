@@ -1,6 +1,6 @@
 <?php
 
-// CART CHECKOUT CONTROLLER
+// CART CHECKOUT
 if (isset($_GET["cart"]) && $_GET["cart"]=="checkout"){
     $connection = dbConnect();
     if ($connection){

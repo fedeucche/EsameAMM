@@ -5,7 +5,7 @@
         
     }
     else{
-        echo '<h1><a href="master.php?page=Login">Accedi</a> per acquistare i nostri libri</h1>';
+        echo '<h1 id="loginSuggestion"><a href="master.php?page=Login">Accedi</a> per acquistare i nostri libri</h1>';
     }
     ?>
     
@@ -32,15 +32,24 @@
                 <tr>
                     <td><a href="#erbologia">Erbologia</a></td>
                 </tr>
+                <tr>
+                    <td><a href="#babbanologia">Babbanologia</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#runeantiche">Rune Antiche</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#cura">Cura delle Creature Magiche</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#divinazione">Divinazione</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#aritmanzia">Aritmanzia</a></td>
+                </tr>
             </tbody>
         </table>
-<!--        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>-->
+
     </div>
     
     <br>
@@ -84,6 +93,25 @@
             che non può capire quale magia si abbia intenzione di fare). </p>
 
     <h4 id="erbologia">Erbologia</h4>
-        <p>In questa materia si studiano le piante magiche,
-            le loro caratteristiche e i modi per occuparsene e ricavarne prodotti utili.</p>
+        <p>In questa materia si studiano le piante magiche, le loro caratteristiche e i modi per occuparsene e ricavarne prodotti utili.</p>    
+        
+    <h4 id="astronomia">Astronomia</h4>
+        <p>Al pari dell'astronomia babbana, in questa materia si studiano stelle e pianeti e i loro movimenti.</p>
+    
+    <h4 id="babbanologia">Babbanologia</h4>
+        <p>La materia consiste nello studiare vita, abitudini sociali e tecnologie dei Babbani (automobili, spine, pile, macchinari ecc.).</p>
+    
+    <h4 id="runeantiche">Rune Antiche</h4>
+        <p>La materia insegna a leggere, tradurre e comprendere questo antico linguaggio, fatto di simboli grafici. A Hogwarts si studiano anche delle rune numeriche in cui i numeri dallo zero al nove sono abbinati ad animali, o da parti di essi, ma anche oggetti magici. </p>
+        
+    <h4 id="cura">Cura delle Creature Magiche</h4>
+        <p>La materia si occupa dello studio e della cura delle creature del mondo magico, tra cui unicorni, Ippogrifi, Thestral, ecc.</p>
+        
+    <h4 id="divinazione">Divinazione</h4>
+        <p>Materia che insegna a prevedere il futuro attraverso diverse tecniche divinatorie come la lettura della mano, delle foglie del tè o delle carte, l'osservazione delle stelle o l'interpretazione dei sogni. Viene praticata anche l'osservazione delle sfere di cristallo.</p>    
+        
+    <h4 id="aritmanzia">Aritmanzia</h4>
+        <p>Questa materia parte da un'associazione tra le lettere dell'alfabeto latino e i numeri per prevedere il futuro.</p>     
+        
+        
 </div>

@@ -1,7 +1,7 @@
 <?php
+require_once 'login.php';
 
-if(isset($_REQUEST["register"]) && isset($_REQUEST["username"]) && isset($_REQUEST["password"])){
-    echo 'QUALCOSA';
+if(isset($_REQUEST["username"]) && isset($_REQUEST["password"])){
     $username = $_REQUEST["username"];
     $password = $_REQUEST["password"];
     //Provo a connettermi al db
@@ -19,6 +19,17 @@ if(isset($_REQUEST["register"]) && isset($_REQUEST["username"]) && isset($_REQUE
         }
     }
     mysqli_close($connection);
+}
+
+function registerNewUser($user, $psw, $dbCon){
+    $sqlCommand = "INSERT INTO users VALUES (null,'".$user."','".$psw."')";
+    $esito = mysqli_query($dbCon, $sqlCommand);
+    if($esito){
+        echo 'Utente registrato con successo<br>';
+    }
+    else {
+        echo 'Errore nella registrazione<br>';
+    }
 }
 
 function checkUsername($user, $dbCon){

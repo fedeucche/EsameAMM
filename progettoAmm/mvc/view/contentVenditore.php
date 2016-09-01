@@ -18,7 +18,7 @@ function addBook($dbCon,$title,$price){
         echo 'Libro aggiunto con successo<br>';
     }
     else {
-        'Errore nel caricamento<br>';
+        echo 'Errore nel caricamento<br>';
     }
 }
 
@@ -46,4 +46,4 @@ function addBook($dbCon,$title,$price){
     </table>
     <br>
     <input onclick="return confirm('Confermi?')" type="submit" name="addBook" value="Aggiungi">
-</form> 
+</form>

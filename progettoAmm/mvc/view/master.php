@@ -2,6 +2,7 @@
 require_once '../controller/dbConnection.php';
 require_once '../model/Book.php';
 require_once '../controller/login.php';
+require_once '../controller/logout.php';
 require_once '../controller/register.php';
 require_once '../controller/dbTransaction.php';
 

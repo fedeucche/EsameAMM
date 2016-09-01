@@ -19,7 +19,7 @@
         <li>Utilizzo del pattern MVC</li>
         <li>Due ruoli (cliente e proprietario)</li>
         <li>Transazione per la conferma di acquisto dei libri nel carrello (Classe dbTransaction.php, funzione checkoutCart)</li>
-        <li>***Almeno una funzionalità ajax (indicare in quale script si trovi)***</li>
+        <li>Almeno una funzionalità ajax (validator.js, che viene collegato in contentRegistration.php)</li>
     </ul>
     <p>Si pu&ograve; accedere alla applicazione con le seguenti credenziali</p>
     <ul>

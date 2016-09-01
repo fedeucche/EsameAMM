@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Ghrigoro Diagon Alley Libreria Hogwartz">
-        <link href="../../css/style2.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../../css/style.css" rel="stylesheet" type="text/css" media="screen">
         <script type="text/javascript" src="../../js/jquery-3.1.0.js"></script>
     </head>
     <body>

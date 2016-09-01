@@ -1,72 +1,59 @@
-var checkAjax = 0;
 
-$(document).ready(function() {
-    $("#registerForm").submit(function(e){
-        if(checkAjax == 1){
-            checkAjax = 0;
-            return true;
-        } else {
-//            formHandler(this);
-//               e.preventDefault();
-            return formHandler(this);
-        }
-    });
-});
-
-function formHandler(form) {
+$('#registerForm').on('submit', function(){
+    if(!$(this).attr('validated')) {
         
-    if (form.username.value === "") {
-        alert('Riempire il campo: Username');
-        return false;
-    }
+        if(emptyChecker(this) == false){
+            console.log("func "+ emptyChecker(this));
+            alert('Riempire i campi: Username e Password');
+            return emptyChecker(this);
+        }        
+        
+        var that = $(this),
+            url = '../controller/checkForm.php',
+            type = that.attr('method'),
+            data = {};
 
-    if (form.password.value === "") {
-        alert('Riempire il campo: Password');
-        return false;
-    }
-    
-    $.ajax({
-        url: "../controller/checkForm.php",
-        type: "post",
-        context: form,
-        data: "username="+form.username.value
-    }).done(function(data){
-            console.log("Log*: " + data);
-            if(data == 0){
-                alert("Username già presente.");
-                return false;
-            } else if (data == 1) {
-                alert("Username OK");
-                checkAjax = 1;
-                form.submit();
-                return true;
-            }
-            else{
-                alert("Problems");
-                return false;
+        that.find('[name]').each(function(index, value){
+            var that = $(this),
+                name = that.attr('name'),
+                value = that.val();
+
+            data[name] = value;
+        });
+
+        $.ajax({
+            url: url,
+            type: type,
+            data: data,
+            success: function(response){
+                  console.log('response= ' + response);
+                  if(response == 1){
+                      $('#registerForm').attr('validated',true);
+                      $('#registerForm').submit();
+                  }
+                  if(response == 0){
+                      alert("Username già presente.");
+                  }
             }
         });
-    return false;
-        
-//    alert("Problems 2");
-//    return false;
+        return false;
+    }
     
-//        success: function(data){
-//            console.log("Log*: " + data);
-//            if(data == 0){
-//                alert("Username già presente.");
-//                return false;
-//            } else if (data == 1) {
-//                alert("Username OK");
-//                checkAjax = 1;
-//                form.submit();
-//                return false;
-//            }
-//            else{
-//                alert("Problems");
-//                return false;
-//            }
-//        }
-//    });
+    alert('Registrazione completata.');
+    $('#registerForm').attr('validated',false);
+    return true;
+});
+
+
+function emptyChecker(form) {
         
+        if (form.username.value == "") {
+//            alert('Riempire il campo: Username');
+            return false;
+        }
+        
+        if (form.password.value == "") {
+//            alert('Riempire il campo: Password');
+            return false;
+        }
 }

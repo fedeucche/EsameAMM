@@ -32,15 +32,7 @@
         }
     }
     
-    ?>
-<!--            
-            <tr>
-                <td>Difesa contro le arti oscure</td>
-                
-                <td>20 galeoni</td>
-                <td><a href="">Aggiungi</a></td>
-            </tr>
--->        
+    ?>    
             
         </tbody>
     </table>
