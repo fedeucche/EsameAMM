@@ -6,8 +6,8 @@
     </p>
 
     <h2> Descrizione dell'applicazione </h2>
-    <p> Questo è un sito web goliardico e irreale.<br>
-        È il sito ufficiale della libreria "Il Ghirigoro" della saga di Harry Potter.<br>
+    <p> Questo è un sito web goliardico.<br>
+        È il sito "ufficiale" della libreria "Il Ghirigoro" della saga di Harry Potter.<br>
         L'applicazione supporta il login e la registrazione dei clienti con username e password.<br>
         Gli utenti normali (clienti) possono aggiungere libri al carrello, poi possono procedere all'acquisto o svuotare il carrello.<br>
         Il proprietario (admin) può aggiungere al negozio nuovi libri acquistabili dai clienti.
