@@ -6,11 +6,11 @@
     </p>
 
     <h2> Descrizione dell'applicazione </h2>
-    <p> Questo è un sito goliardico e irreale.<br>
-        È il sito ufficiale della libreria 'Il Ghirigoro' della saga di Harry Potter.<br>
-        L'applicazione supporta la registrazione dei clienti.<br>
-        Gli utenti normali (clienti) possono aggiungere libri al carrello per l'acquisto.
-        Il proprietario (admin) può aggiungere nuovi libri acquistabili dai clienti.
+    <p> Questo è un sito web goliardico e irreale.<br>
+        È il sito ufficiale della libreria "Il Ghirigoro" della saga di Harry Potter.<br>
+        L'applicazione supporta il login e la registrazione dei clienti con username e password.<br>
+        Gli utenti normali (clienti) possono aggiungere libri al carrello, poi possono procedere all'acquisto o svuotare il carrello.<br>
+        Il proprietario (admin) può aggiungere al negozio nuovi libri acquistabili dai clienti.
     </p>
     <h2> Per il progetto ho soddisfatto i seguenti requisiti: </h2>
     <ul>
@@ -36,6 +36,6 @@
     </ul>
     <p>Ovviamente è anche possibile registrarsi come cliente.</p>
     
-    <h2> Homepage </h2>
+    <h2> Homepage link</h2>
     <p><a href="http://spano.sc.unica.it/amm2015/ucchesuFederico/progettoAmm/mvc/view/master.php"> http://spano.sc.unica.it/amm2015/ucchesuFederico/progettoAmm/mvc/view/master.php </a></p>
 </div>
