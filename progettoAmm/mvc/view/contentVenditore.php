@@ -15,7 +15,7 @@ function addBook($dbCon,$title,$price){
     $sqlCommand = "INSERT INTO books VALUES (null,'".$title."','".$price."')";
     $esito = mysqli_query($dbCon, $sqlCommand);
     if($esito){
-        echo 'Libro aggiunto con successo<br>';
+        echo '<script type="text/javascript">alert("Libro aggiunto con successo");</script>';
     }
     else {
         echo 'Errore nel caricamento<br>';
